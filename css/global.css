@@ -1,0 +1,62 @@
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nitro-blue: #5bacc3;
+  --graphite: #393939;
+}
+
+.landing-header__anchor {
+  color: var(--graphite);
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.landing-header__logo {
+  width: 3.125rem;
+  display: inline-block;
+}
+
+.landing-header__nav {
+  list-style-type: none;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.landing-header__heading {
+  display: inline-block;
+  font-size: 2.9625rem;
+  padding-right: 20px;
+}
+
+.landing-header__nav-link {
+  color: #393939;
+  text-decoration: none;
+}
+
+.landing-header__nav-link:hover {
+  color: var(--nitro-blue);
+}
+
+.landing-header__nav-shop-link {
+  color: #5bacc3;
+  text-decoration: none;
+}
+
+.landing-header__nav li {
+  margin: 0 10px;
+  padding: 10px;
+  display: inline-block;
+}
