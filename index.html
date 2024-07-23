@@ -7,8 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./scss/landing.css" />
     <title>Coffee Shop - Home</title>
   </head>
   <body>
@@ -32,10 +31,10 @@
           <li><a href="./pages/menu.html" class="landing-header__nav-shop-link">SHOP NOW</a></li>
         </ul>
       </nav>
-      <section class="header-section">
-        <div class="text-content">
+      <section class="banner">
+        <div class="banner__text">
           <h1>Nitro Coffee</h1>
-          <p class="definition">
+          <p class="banner__definition">
             Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from
             certain Coffee species.
           </p>
@@ -48,8 +47,8 @@
     </header>
 
     <main>
-      <section id="section">
-        <h2 class="section__title">Our Products</h2>
+      <section class="products">
+        <h2 class="products__header">Our Products</h2>
         <article class="product">
           <img src="./assets/images/coffeebeans.png" alt="coffee beans" class="product__image" />
           <div class="product__container">
@@ -89,8 +88,8 @@
           </div>
         </article>
       </section>
-      <section id="view-button">
-        <a href="./pages/menu.html" , class="button">VIEW ALL </a>
+      <section class="products__button">
+        <a href="./pages/menu.html" class="button">VIEW ALL </a>
       </section>
       <div class="discount">
         <div class="discount__body">
@@ -114,37 +113,38 @@
           <img class="discount__image" src="./assets/images/tiltedcan.png" alt="can image" />
         </div>
       </div>
-      <div class="first-nitro">
-        <section id="first-nitro">
-          <p class="first-nitro">
-            Get 20% off your first order with code: <span class="bold-text">FirstNitro</span>
+      <div class="discount-banner">
+        <section class="discount-banner__section">
+          <p>
+            Get 20% off your first order with code:
+            <span class="discount-banner__text">FirstNitro</span>
           </p>
         </section>
       </div>
     </main>
 
-    <footer>
-      <article class="footer">
+    <footer class="footer">
+      <article class="footer__content">
         <img
           src="./assets/logos/coffee-beans-logo-and-footer.svg"
           alt="coffee bean logo"
-          class="footer__image left"
+          class="footer__image footer__image--left"
         />
         <img
           src="./assets/logos/coffee-beans-logo-and-footer.svg"
           alt="coffee bean logo"
-          class="footer__image right"
+          class="footer__image footer__image--right"
         />
         <h3 class="footer__heading">Address</h3>
-        <p class="regular">503 Broadway Penthouse</p>
-        <p class="regular">New York</p>
+        <p class="footer__text">503 Broadway Penthouse</p>
+        <p class="footer__text">New York</p>
       </article>
-      <article class="footer">
+      <article class="footer__content">
         <h3 class="footer__heading">Hours</h3>
-        <p class="regular"><b>Monday - Friday:</b> 9am - 7pm</p>
-        <p class="regular"><b>Saturday - Sunday:</b> 10am - 5pm</p>
+        <p class="footer__text"><b>Monday - Friday:</b> 9am - 7pm</p>
+        <p class="footer__text"><b>Saturday - Sunday:</b> 10am - 5pm</p>
       </article>
-      <article class="footer">
+      <article class="footer__content">
         <h3 class="footer__heading">Social</h3>
         <a href="https://www.facebook.com/">
           <img src="./assets/logos/Facebook-Icon.svg" alt="facebook" class="footer__icon" />

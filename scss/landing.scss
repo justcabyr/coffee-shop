@@ -1,0 +1,267 @@
+@use './partials/global' as *;
+
+.banner {
+  background-color: $nitro-pink;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 2.5rem 7.5rem 2.5rem 5rem;
+  align-items: center;
+
+  &__text {
+    width: 30%;
+    flex: 1;
+  }
+
+  &__definition {
+    width: 40%;
+    padding: 2.5rem 0;
+  }
+}
+
+.products {
+  text-align: center;
+  background-color: #f7f7f7;
+
+  &__header {
+    padding-top: 2.5rem;
+  }
+
+  &__button {
+    justify-content: center;
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 1.25rem 0 3.75rem 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.product {
+  display: inline-block;
+  width: 24rem;
+  height: 31rem;
+  border-radius: 0.625rem;
+  margin: 2.5rem;
+  padding: 1.5rem;
+  background: $linear-gradient;
+  box-shadow: $box-shadow;
+
+  &__name {
+    padding: 2rem 0 0 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 2.67rem 0.2rem 1.34rem 0.2rem;
+  }
+
+  &__image {
+    height: 16.5rem;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__description {
+    color: #909090;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  &__price {
+    text-align: right;
+  }
+
+  &__price > p {
+    color: #5bacc3;
+    font-size: 2.0625rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0 0;
+  }
+}
+
+.discount-banner {
+  padding: 9rem 0;
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    font-weight: 700;
+  }
+
+  &__section {
+    width: 80%;
+    background-color: #393939;
+    font-size: 2.8125rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    animation: flash 2.5s infinite;
+  }
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+}
+
+.discount {
+  padding: 2.5rem;
+  margin: 1.34rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  z-index: 1;
+  position: relative;
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 3.125rem;
+    margin-left: 1.25rem;
+    margin-right: 0.67rem;
+  }
+
+  &__body {
+    z-index: 1;
+    flex-direction: column;
+    align-content: center;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26.67rem;
+    height: 26.67rem;
+    justify-items: center;
+    border: #5bacc3 solid 0.34rem;
+    position: relative;
+  }
+
+  &__graphic::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 1rem;
+    left: 1rem;
+    right: -1.25rem;
+    bottom: -1.25rem;
+    background: url('../assets/images/coldbrewbackground.png') center/cover;
+  }
+
+  &__image:hover {
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  position: relative;
+  background-color: transparent;
+  border: #393939 solid 0.14rem;
+  width: 11.25rem;
+  color: white;
+  font: inherit;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 1.25rem;
+  text-align: center;
+  display: inline-block;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0.27rem;
+    left: 0.27rem;
+    right: -0.54rem;
+    bottom: -0.54rem;
+    background-color: #5bacc3;
+    transition: opacity 0.01s;
+  }
+
+  &:active {
+    background-color: #5bacc3;
+    top: 0.27rem;
+    left: 0.27rem;
+  }
+
+  &:active::before {
+    opacity: 0;
+  }
+}
+
+.footer {
+  background-color: #fff0ed;
+  padding: 0 2.5rem 1.25rem 3.75rem;
+  position: relative;
+  z-index: 1;
+  padding-left: 3.75rem;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    display: inline-block;
+    width: 25%;
+    border-radius: 0.625rem;
+    margin: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  &__heading {
+    padding: 1.25rem 0;
+  }
+  
+  &__image {
+    position: absolute;
+    width: 6.375rem;
+    opacity: 0.25;
+  }
+  
+  &__icon {
+    width: 3.125rem;
+  }
+  
+  &__text {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  &__image--left {
+    left: -2.5rem;
+    top: 1.25rem;
+  }
+  
+  &__image--right {
+    right: -2.5rem;
+    bottom: 3.75rem;
+  }
+}

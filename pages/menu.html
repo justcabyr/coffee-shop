@@ -7,8 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../scss/menu.css" />
+
     <title>Coffee Shop - Menu</title>
   </head>
   <body>
@@ -35,16 +35,16 @@
     </header>
 
     <main>
-      <div class="menu-nav-heading">
-        <section class="title-box">
+      <div class="banner">
+        <section class="banner__title">
           <h1>MENU</h1>
         </section>
       </div>
-      <div class="sub-navigation">
-        <ul class="sub-navigation__nav">
-          <li><a href="#hot-drinks" class="sub-navigation__nav-link">Hot Drinks</a></li>
-          <li><a href="#cold-drinks" class="sub-navigation__nav-link">Cold Drinks</a></li>
-          <li><a href="#pastries" class="sub-navigation__nav-link">Pastries</a></li>
+      <div class="secondary-nav">
+        <ul class="secondary-nav__list">
+          <li><a href="#hot-drinks" class="secondary-nav__item">Hot Drinks</a></li>
+          <li><a href="#cold-drinks" class="secondary-nav__item">Cold Drinks</a></li>
+          <li><a href="#pastries" class="secondary-nav__item">Pastries</a></li>
         </ul>
       </div>
 
@@ -66,7 +66,7 @@
         <p class="product__price">$4.99</p>
       </section>
 
-      <section class="product-black" id="cold-drinks">
+      <section class="product product--black" id="cold-drinks">
         <h2>Cold Drinks</h2>
         <h3 class="product__header">Cold brew</h3>
         <p class="product__description">
